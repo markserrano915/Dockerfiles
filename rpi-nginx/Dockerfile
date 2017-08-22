@@ -8,8 +8,8 @@ RUN apt-get update && apt-get install -y nginx
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
-VOLUME ["/usr/share/nginx/www"]
-VOLUME ["/etc/nginx"]
+#VOLUME ["/usr/share/nginx/www"]
+#VOLUME ["/etc/nginx"]
 
 EXPOSE 80 443
 
